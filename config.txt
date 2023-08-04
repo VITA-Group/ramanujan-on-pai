@@ -1,0 +1,4 @@
+{
+ "data": "cifar10",
+ "model": "resnet34",
+}

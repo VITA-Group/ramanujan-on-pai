@@ -1,0 +1,16 @@
+#!/bin/bash
+source /home/lyin/miniconda3/etc/profile.d/conda.sh
+source activate Pytorch
+
+
+
+python main_infe.py \
+	--data ../data \
+	--dataset cifar100 \
+	--arch vgg16_bn \
+	--seed 1 \
+	--inference \
+	--checkpoint /data/volume_2/LTH_models/Cifar100/LT_cifar100_vgg16_s1
+
+
+conda deactivate
